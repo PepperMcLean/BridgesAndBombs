@@ -1,15 +1,14 @@
 .App {
+  display: flex;
   text-align: center;
+  height: 100vh;
 }
 
+
+
 .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 
 /* Control the left side */
@@ -72,8 +71,7 @@
 }
 
 .rules {
-  padding-left: 50px;
-  padding-bottom: 50px;
+  padding: 20px;
   text-align: left;
 }
 
@@ -169,4 +167,17 @@
 
 .button-4:-webkit-details-marker {
   display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    flex-direction: column;
+  }
+  .left {
+    border-right: white;
+  }
+  .rules {
+    padding: 20px;
+    text-align: left;
+  }
 }
