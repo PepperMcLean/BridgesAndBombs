@@ -1,7 +1,6 @@
 .App {
   display: flex;
   text-align: center;
-  height: 100vh;
 }
 
 
@@ -9,12 +8,12 @@
 .split {
   flex-grow: 1;
   flex-basis: 100px;
+  height: 100%;
 }
 
 /* Control the left side */
 .left {
   left: 0;
-  border-right: 5px solid grey;
 }
 
 /* Control the right side */
@@ -172,9 +171,6 @@
 @media only screen and (max-width: 1000px) {
   .App {
     flex-direction: column;
-  }
-  .left {
-    border-right: white;
   }
   .rules {
     padding: 20px;
